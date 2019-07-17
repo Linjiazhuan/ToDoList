@@ -45,6 +45,23 @@ class ToDoListViewController: UITableViewController {
             }
         }
     }
+    // Add New item Method
+    @IBAction func addButtonPressed(sender:UIBarButtonItem){
+        var saveTextfield = UITextField()
+        let addAlert = UIAlertController(title: "Add New Todoey Item", message: "", preferredStyle: .alert)
+        let addAction = UIAlertAction(title: "Add Item", style: .default) { (action) in
+            if let saveTextfield = saveTextfield.text{
+                self.itemArray.append(saveTextfield)
+                self.tableView.reloadData()
+            }
+        }
+        addAlert.addTextField { (textfield) in
+            textfield.placeholder = "Create New Item"
+            saveTextfield = textfield
+        }
+        addAlert.addAction(addAction)
+        present(addAlert, animated: true, completion: nil)
+    }
 
 }
 
