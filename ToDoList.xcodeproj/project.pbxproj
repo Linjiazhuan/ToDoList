@@ -13,6 +13,7 @@
 		184EE6F122DEAF6A0027D47B /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 184EE6EF22DEAF6A0027D47B /* ToDoList.xcdatamodeld */; };
 		184EE6F322DEAF6C0027D47B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184EE6F222DEAF6C0027D47B /* Assets.xcassets */; };
 		184EE6F622DEAF6C0027D47B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184EE6F422DEAF6C0027D47B /* LaunchScreen.storyboard */; };
+		1866237322E03724000CCBD3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866237222E03724000CCBD3 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		184EE6F222DEAF6C0027D47B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		184EE6F522DEAF6C0027D47B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		184EE6F722DEAF6C0027D47B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1866237222E03724000CCBD3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				184EE6F422DEAF6C0027D47B /* LaunchScreen.storyboard */,
 				184EE6F722DEAF6C0027D47B /* Info.plist */,
 				184EE6EF22DEAF6A0027D47B /* ToDoList.xcdatamodeld */,
+				1866237222E03724000CCBD3 /* Item.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1866237322E03724000CCBD3 /* Item.swift in Sources */,
 				184EE6EB22DEAF6A0027D47B /* ViewController.swift in Sources */,
 				184EE6F122DEAF6A0027D47B /* ToDoList.xcdatamodeld in Sources */,
 				184EE6E922DEAF6A0027D47B /* AppDelegate.swift in Sources */,
