@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import ChameleonFramework
 
 class CategoryTableViewController: SwipeTableViewController {
 
@@ -20,7 +21,7 @@ class CategoryTableViewController: SwipeTableViewController {
         super.viewDidLoad()
         
         loadCategory()
-        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+        
     }
 
     // MARK: - Table View Data source
@@ -37,7 +38,8 @@ class CategoryTableViewController: SwipeTableViewController {
 //        let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
         let cell = super.tableView(tableView, cellForRowAt: indexPath)
         cell.textLabel?.text = categories?[indexPath.row].title ?? "No Category"
-
+        cell.backgroundColor = UIColor(hexString: categories?[indexPath.row].backgroundColor ?? "DFDFDF")
+        
 
         return cell
     }
@@ -61,6 +63,7 @@ class CategoryTableViewController: SwipeTableViewController {
         let action = UIAlertAction(title: "Add category", style: .default) { (action) in
             let newCategory = Category()
             newCategory.title = saveTextfield.text!
+            newCategory.backgroundColor = UIColor.randomFlat.hexValue()
             do{
                 try self.realm.write {
                     self.realm.add(newCategory)

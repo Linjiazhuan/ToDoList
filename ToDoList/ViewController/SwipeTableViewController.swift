@@ -13,7 +13,7 @@ class SwipeTableViewController: UITableViewController , SwipeTableViewCellDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        settingTableView()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -48,6 +48,11 @@ class SwipeTableViewController: UITableViewController , SwipeTableViewCellDelega
     
     func updateModel(with indexPath:IndexPath){
         
+    }
+    
+    func settingTableView(){
+        tableView.rowHeight = 50.0
+        tableView.separatorStyle = .none
     }
 
 }
